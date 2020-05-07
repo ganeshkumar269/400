@@ -1,0 +1,10 @@
+Q:  Given an array of integers, find the no. of subarrays length >= 3 which have an arithmetic progression
+ 
+    Eg. [1,2,3,4] -> [1,2,3],[1,2,3,4],[2,3,4] i,e 3
+
+A:
+    Approach: Iterate through the array 
+        if diff is the same for 2 consecutive times increment res variable by current_index - start_index - 1
+    whenever there is achange in diff b/w consecutive elements start the process again.
+
+TimeComplexity: O(n)

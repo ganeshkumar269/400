@@ -1,0 +1,18 @@
+Q:  Given an array of integers and a target sum. Find 3 integers whose sum equals the target.
+
+A:  Sort the array.
+    Pick a number and do a 2 sum for target - arr[i]
+
+    3Sum(arr):
+        arr.sort()
+        for(i in arr):
+            int l = 0 , r = arr.size - 1
+            while(l < r)
+                if( this.i != prevThis.i)
+                    sum = arr[l] + arr[r]
+                    if(sum == target - i)
+                        return i,arr[l],arr[i]
+                    else if(sum is greater)
+                        r--
+                    else l++
+    Time Complexity O(n^2)

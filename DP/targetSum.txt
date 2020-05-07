@@ -1,0 +1,9 @@
+Q:  Given an array of integers. An integer can be assigned with a +ve or -ve sign.
+    Find the num.of ways symbols can be assigned such a way that the total sum equals a target sum.
+
+A:  let P -> array of with +ve symbol assigned 
+        N -> "      "      -ve  
+    sum(P) - sum(N) = target
+    sum(P) = target + sum(arr) / 2
+
+    i.e the question boils down to finding an array wiht positive symbols suh that the sum equals (target + sum(arr))/ 2

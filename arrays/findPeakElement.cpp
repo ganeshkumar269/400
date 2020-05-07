@@ -1,7 +1,7 @@
-// #ifndef ONLINE_JUDGE
-//     #include "c:\LIBRARIES\include\vectorprint.cpp"
-//     #include "c:\LIBRARIES\include\mytimer.cpp"
-// #endif
+#ifndef ONLINE_JUDGE
+    #include "c:\LIBRARIES\include\vectorprint.cpp"
+    #include "c:\LIBRARIES\include\mytimer.cpp"
+#endif
 #include <bits/stdc++.h>
 using namespace std; 
 struct custom_hash {
@@ -43,16 +43,9 @@ int main()
         freopen("in.txt","r",stdin);
     #endif
     ll n;
-    cin >> n;
-    v arr(n,0);
-    REP(i,n) cin>>arr[i];
-    ll diff = arr[1] - arr[0];
-    ll start = 0, res=0;
-    FOR(i,2,n-1){
-        ll diffT = arr[i] - arr[i-1];
-        if(diffT == diff and i-start > 1) res+=(i-start-1);
-        else {diff = diffT;start = i;} 
-    }
-    cout << res << endl;
+    cin>>n;
+    v arr;
+    REP(i,n) cin>>ar[i];
+    ll low = 0
     return 0;
 }
