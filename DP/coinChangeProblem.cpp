@@ -44,8 +44,8 @@ int main()
     REP(i,m) cin>>c[i];
     v res(n+5,0);
     res[0] = 1;
-    FOR(i,1,n)
-        for(long t : c)
+    for(long t : c)
+        FOR(i,t,n)
             if(i - t>= 0)
                 res[i] += res[i-t];
     REP(i,res.size()) cout << res[i] << " ";

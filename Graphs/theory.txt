@@ -1,0 +1,6 @@
+1. To Find no. of components of a graph -> Do dfs for every vertex and for every time u call the dfs incrmenet the cnt ; cnt is the no.of components
+    See roads and libraries question hackerrank
+2. To find If there is a cycle in the graph 
+    Method 1: Do DFS.
+    Method 2: Union Find 1.
+    Method 2: Union Find By Rank

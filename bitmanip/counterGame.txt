@@ -1,0 +1,24 @@
+Q: Given a number n , following operations are done
+    1. if power of 2 , it is divided by 2
+    2. else subtracted from the highest power 2 less than n
+
+    Louise and Richard takes turns , Louise starts first.
+    Who would win for a given n
+
+Ans:
+    Brute Force:
+        int res = 0;
+        while(n != 1) :
+            if( ceil(log2(n)) == floor(log2(n)))
+                n = n >>1 
+            else n-= log2(n)
+            res++
+        if res is odd   Louise
+        else Richard
+    Time Complexity O(log2(n)*log2(n))
+
+    Optimised:
+       while(n%2 == 0 ) res++ , n= n >> 1;
+       while( n!= 1) res++ if n&1 , n = n >> 1
+
+       Time Complexity O(log2(n))

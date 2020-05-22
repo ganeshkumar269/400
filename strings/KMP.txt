@@ -1,0 +1,4 @@
+Q:  Given a string T , and pattern P find at which position of the string does the pattern occur
+
+Knuth-Morris-Pratt Algorithm:
+    

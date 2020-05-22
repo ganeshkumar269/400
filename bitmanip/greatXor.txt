@@ -1,0 +1,7 @@
+https://www.hackerrank.com/challenges/the-great-xor/problem
+
+Q: Given a number n 
+    Total number of a's suchu that n^a > n where 0 < a < n 
+
+A: the maximum possible number when 0 < a < n is xored with n is t = pow(2,log2(n)+1) - 1
+    every number between n and t is possilbe to be gotten with an a.1

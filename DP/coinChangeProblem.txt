@@ -1,0 +1,32 @@
+https://www.geeksforgeeks.org/coin-change-dp-7/
+
+Q: Given a infinte supply of m coins , how many ways 'n' can be formed.
+
+    Eg: coins = {1,2,3} , 5
+        5 -> {1,1,1,1,1} , {1,2,2} , {1,1,1,2} , {1,1,3} , {2,3} -> 5
+
+Ans:    for every coin i:
+            number of ways n can be formed = number of ways n can be formed without i + number of ways n-i can be formed
+        // Using DP 
+        let table[n+1][coins.size() - 1] = {0}
+        for(i =0 to coins.size()-1) table[0][i] = 1  // if n== 0 no.ways we can always form n is 1 time
+
+        coins.sort()
+        //Bottom Up approach
+        for(int i =1 to n)
+            for(int j =0 to c.size()-1) 
+                //including c[j]
+                x = table[i-c[j]][j] if i-c[j]>=0
+                y = table[i][j-1] if j-1 > 0
+                table[i][j] = x+y
+        return table[n][c.size()-1]
+
+        Time Complexity O(n*m) , Space Complexity O(n*m)
+
+
+        //Another Method
+        for(i =0 to coins.size())
+            for(j = c[i] to n)
+                res[j] += res[j-c[i]]
+
+        Time Complexity O(n*m) , Space Complexity O(n)

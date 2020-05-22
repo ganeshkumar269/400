@@ -1,0 +1,3 @@
+https://www.hackerrank.com/challenges/xor-se/problem
+
+See the discussions tab for the solution

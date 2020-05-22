@@ -1,0 +1,11 @@
+https://www.hackerrank.com/challenges/maximizing-xor/problem
+
+Q: Given a range [l,r] find the maximum xor u could get out of a pair 
+    Eg: [11,12] -> 11^12 -> 13 which is the max
+
+Ans:    See the discussions tab in the problem page
+
+    L = 10111   
+    R = 11100
+      _X___  <-- that's most significant differing bit
+      01111  <-- here's our final answer
