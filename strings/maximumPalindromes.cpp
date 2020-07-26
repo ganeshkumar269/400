@@ -57,19 +57,20 @@ int main()
 
     string s;
     cin>>s;
-    const long M = 10e9 + 7;
-    int q;
-    v cnt(s.size(),0);
-    while(q--){
-        int l,r;
-        cin>>l>>r;
-        unordered_map<char,int> memo;
-        for(int i =l;i<=r;i++)memo[s[i]]++;
-        for(auto i : memo){
-            if
-        }
-        cout << "Result" << endl;
-    }
+    cout << s.substr(57,4) << endl;
+    // const long M = 10e9 + 7;
+    // int q;
+    // v cnt(s.size(),0);
+    // while(q--){
+    //     int l,r;
+    //     cin>>l>>r;
+    //     unordered_map<char,int> memo;
+    //     for(int i =l;i<=r;i++)memo[s[i]]++;
+    //     for(auto i : memo){
+    //         if
+    //     }
+    //     cout << "Result" << endl;
+    // }
 
 
     return 0;
