@@ -1,0 +1,13 @@
+https://www.youtube.com/watch?v=MpKG6FmcIHk
+normal notation :  1 2 3 4 5   -> original set
+                   5 3 2 4 1    ->permuatation of the set
+                
+    This is easier to construct aswell as to read, but takes a lot of space
+
+Cycle Notation: 
+    From above example (1->5,  5->1) (2->, 3->2) (4->4)
+    Can be compressed to (1 5)(2 3)(4)
+    Each set here is a cycle and the set with length n is called as n-cycle. Two cycle is also called as transposition.
+    One cycles can be ignored.The example can be rewritten as,
+        (1 5)(2 3) 
+    A lot of space is saved.
