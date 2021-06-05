@@ -3,6 +3,7 @@
 using namespace std;
 /*
     https://www.geeksforgeeks.org/union-find/
+    Used to Find a cycle in a graph
     1.Create a parent array size = n , no.of vertices
     2.initialise parent[i] = i
     3.For every edge e:
